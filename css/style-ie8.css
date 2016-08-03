@@ -1,16 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: 'league_gothicregular';
-    src: url('../fonts/league-gothic_allfont.ru-webfont.woff2') format('woff2'),
-    url('../fonts/league-gothic_allfont.ru-webfont.woff') format('woff');
+    src: url('../fonts/league-gothic_allfont.ru-webfont.eot');
+    src: url('../fonts/league-gothic_allfont.ru-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/league-gothic_allfont.ru-webfont.woff2') format('woff2'),
+         url('../fonts/league-gothic_allfont.ru-webfont.woff') format('woff'),
+         url('../fonts/league-gothic_allfont.ru-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+
 
 }
 
 @font-face {
     font-family: 'open_sansextrabold';
-    src: url('../fonts/open-sans-extrabold_allfont.ru-webfont.woff2') format('woff2'),
-    url('../fonts/open-sans-extrabold_allfont.ru-webfont.woff') format('woff');
+    src: url('../fonts/open-sans-extrabold_allfont.ru-webfont.eot');
+    src: url('../fonts/open-sans-extrabold_allfont.ru-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans-extrabold_allfont.ru-webfont.woff2') format('woff2'),
+         url('../fonts/open-sans-extrabold_allfont.ru-webfont.woff') format('woff'),
+         url('../fonts/open-sans-extrabold_allfont.ru-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -18,10 +30,14 @@
 
 @font-face {
     font-family: 'open_sanslight';
-    src: url('../fonts/open-sans-light_allfont.ru-webfont.woff2') format('woff2'),
-    url('../fonts/open-sans-light_allfont.ru-webfont.woff') format('woff');
+    src: url('../fonts/open-sans-light_allfont.ru-webfont.eot');
+    src: url('../fonts/open-sans-light_allfont.ru-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans-light_allfont.ru-webfont.woff2') format('woff2'),
+         url('../fonts/open-sans-light_allfont.ru-webfont.woff') format('woff'),
+         url('../fonts/open-sans-light_allfont.ru-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
 
 
     html,
@@ -106,7 +122,7 @@
         top: 12px;
         left: -1px;
         margin-right: 30px;
-        float: left;    
+        float: left;
     }
 
     .logo__item {
@@ -173,7 +189,7 @@
             height: 260px;
         }
 
-        ul.menu_top:hover:after {       
+        ul.menu_top:hover:after {
             z-index: 2;
             display: block;
             position: absolute;
@@ -234,10 +250,10 @@
         .submenu {
             display: none;
         }
-        ul.menu_top:hover .submenu {  
+        ul.menu_top:hover .submenu {
             display: block;
         }
-        .menu > .menu__item_top {   
+        .menu > .menu__item_top {
             border-top: none;
         }
 
@@ -270,7 +286,7 @@
         }
     }
 
-    @media (max-width: 479px) {              
+    @media (max-width: 479px) {
         .menu__item a.menu__link_top {
             text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);}
             .menu__item a.menu__link_top:hover {
@@ -441,13 +457,13 @@
             position: relative;
             content: "";
             width: 68px;
-            height: 68px;     
+            height: 68px;
             box-sizing: border-box;
-            background: none;    
+            background: none;
             border: none;
             background-image: url('../img/play.png');
             background-size: 68px 68px;
-            z-index: 2;                  
+            z-index: 2;
         }
 
         .page-control {
@@ -495,12 +511,12 @@
             display: block;
             width: 17px;
             height: 17px;
-            box-sizing: border-box;    
+            box-sizing: border-box;
             float: left;
             margin-left: 5px;
-            margin-right: 5px;        
+            margin-right: 5px;
             background: url('../img/sprite_panig.png');
-            background-position: 0px 0px; 
+            background-position: 0px 0px;
         }
 
         li.panigator__item.active,
@@ -570,7 +586,7 @@
             width: 226px;
             height: 200px;
             margin-right: 30px;
-            float: left;    
+            float: left;
         }
         .about__item:nth-child(2) {
             margin-right: 107px;
@@ -720,8 +736,8 @@
             padding-left: 0px;
             padding-bottom: 0px;
             margin-right: 10px;
-            vertical-align: top;   
-            float: left;    
+            vertical-align: top;
+            float: left;
         }
 
         .news__block {
@@ -733,21 +749,21 @@
             padding: 24px 28px 28px 38px;
             background: #fff;
             box-shadow: 0 1px 1px 1px rgb(239, 239, 239);
-            z-index: 3;    
+            z-index: 3;
         }
 
-        .news__block:before {       
+        .news__block:before {
             content: '';
             position: absolute;
             left: 350px;
-            bottom: -22px;   
+            bottom: -22px;
             border: 8px solid transparent;
             border-top: 11px solid rgba(239, 239, 239, 0.8);
             border-right: 6px solid rgba(239, 239, 239, 0.8);
             z-index: 1;
         }
 
-        .news__block:after {       
+        .news__block:after {
             content: '';
             position: absolute;
             left: 350px;
@@ -763,7 +779,7 @@
             position: relative;
             font-size: 16px;
         }
-        .news__item:before {          
+        .news__item:before {
             display: block;
             position: absolute;
             content: '';
@@ -843,13 +859,13 @@
             width: 20px;
             height: 20px;
             border: none;
-            border-radius: none;    
+            border-radius: none;
             box-sizing: border-box;
             float: left;
-            background: none;    
+            background: none;
             margin-left: 2px;
             margin-right: 2px;
-            background: url('../img/sprite_panig.png');    
+            background: url('../img/sprite_panig.png');
             background-position: 0px -18px;
         }
 
@@ -861,7 +877,7 @@
             box-sizing: border-box;
             box-shadow: none;
             width: 20px;
-            height: 20px;    
+            height: 20px;
             margin-top: 0px;
             margin-left: 2px;
             margin-right: 2px;
@@ -966,7 +982,7 @@
             bottom: 3px;
             font-size: 18px;
             font-family: "league_gothicregular";
-            color: #454545;    
+            color: #454545;
         }
         .read_blog {
             display: none;
@@ -991,7 +1007,7 @@
             width: 100%;
             height: 118px;
             margin: 0 auto;
-            box-sizing: border-box;    
+            box-sizing: border-box;
             padding-left: 3px;
             padding-right: 3px;
         }
@@ -1195,7 +1211,12 @@
             padding-top: 40px;
             padding-bottom: 0;
             font-size: 20px;
-            z-index: 1;    
+            z-index: 1;
+                box-sizing: border-box;
+            background-image: url('../img/bg_copy_ie8.png') !important;
+            background-position: center top;
+            background-size: 100% 201px;
+            background-repeat: no-repeat;
         }
         .page-footer:after {
             display: block;
@@ -1211,10 +1232,10 @@
             padding-bottom: 0;
             overflow: hidden;
             box-sizing: border-box;
-            background-image: url('../img/bg_copy_ie8.png');
+            background-image: url('../img/bg_copy_ie8.png') !important;
             background-position: center top;
             background-size: 100% 201px;
-            background-repeat: no-repeat; 
+            background-repeat: no-repeat;
             z-index: 1;
         }
 
@@ -1365,8 +1386,8 @@
                             .logo_top-line {left: 3px; float: none;}
                             .logo__item {margin-right: -6px;}
                             .logo__er {position: relative; top: 0px;}
-                            .nav__top {display: block; width: 244px; margin: 0 auto; margin-top: 29px;}   
-                            .first_link_top {display:block; float: none;} 
+                            .nav__top {display: block; width: 244px; margin: 0 auto; margin-top: 29px;}
+                            .first_link_top {display:block; float: none;}
                             .menu__link_top {display:block; float: none;}
                             .menu__item_top {display:block; float: none;}
                             li.menu__item {display:block; float: none;}
